@@ -383,9 +383,9 @@ width: 85%;
 /*large phones*/
 
 @media only screen and (min-width: 601px) and (max-width: 758px){
-    body{
+    /* body{
         background: #315d3a;
-    }
+    } */
         .cards{
             padding: 5px;
                 }
@@ -397,9 +397,9 @@ width: 85%;
 }
 /* tablet */
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-    body{
+    /* body{
         background: #ff7f7f;
-    }
+    } */
     .cards{
 padding: 10px 20px;
     }
