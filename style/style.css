@@ -9,7 +9,7 @@
     --bg-main: #1e1e20;
     --bg-dark: #000000;
     --text: #ffffff;
-    --glow-color: #51df6d ;
+    --glow-color: hsl(132, 69%, 60%) ;
 }
 body{
     font-family: system-ui , "sans-serif";
@@ -92,7 +92,7 @@ transition: 500ms all;
 .buttons button a{
     text-decoration: none;
     color: var(--text);
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 main{
@@ -268,6 +268,39 @@ width: 85%;
     grid-column: span 4;
     grid-row: span 4;
 } */
+
+
+footer{
+padding: 20px 10px 0 10px;
+height: 300px;
+
+}
+.foot-top{
+    text-align: center;
+}
+.foot-top h5{
+font-size: 2rem;
+}
+
+.foot-mid{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.foot-mid ul li{
+    list-style: "👉";
+    
+}
+
+
+.foot-mid ul{
+    line-height: 2rem;
+}
+.foot-end{
+text-align: center;
+vertical-align: baseline;
+}
+
 /*Navbar*/
 @media only screen and (max-width: 758px){
     .nav-btn{
