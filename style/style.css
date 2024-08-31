@@ -24,10 +24,7 @@ body{
     text-shadow: 0 0 20px var(--glow-color);
     background-color: transparent;
 }
-<<<<<<< HEAD
 
-
-=======
 .nav-btn{
     display: none;
 }
@@ -62,7 +59,7 @@ margin-bottom: 10px;
 .nav-left img{
 width: 50px;
 }
->>>>>>> 0d12ab76b6b643988aea0ccc6bf5547f41eb33f3
+
 
 .hero{
 display: flex;
@@ -222,17 +219,17 @@ transition: 1s all;
 }
 .institute .grid-gallery{
 display: grid;
-<<<<<<< HEAD
+
 grid-template-columns: repeat(5, 1fr);
 grid-template-rows: auto;
 gap: .5rem;
 width: 95%;
-=======
+
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: auto;
 gap: .5rem;
 width: 85%;
->>>>>>> 0d12ab76b6b643988aea0ccc6bf5547f41eb33f3
+
 }
 .grid-gallery img{
     width: 100%;
@@ -314,8 +311,6 @@ text-align: center;
 vertical-align: baseline;
 }
 
-<<<<<<< HEAD
-=======
 /*Navbar*/
 @media only screen and (max-width: 758px){
     .nav-btn{
@@ -363,7 +358,6 @@ vertical-align: baseline;
     }
 }
 
->>>>>>> 0d12ab76b6b643988aea0ccc6bf5547f41eb33f3
 /* phone */
 @media only screen and (max-width: 600px) {
     .cards{
