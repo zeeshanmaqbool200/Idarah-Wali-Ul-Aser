@@ -23,7 +23,7 @@ function toggleNav(){
 
     navBtn.style.zIndex = "111";
 
-     navBtn.style.background = "red";
+    
 
        mobileNav.style.borderRadius = "0px";
        document.body.style.overflow = "hidden";
