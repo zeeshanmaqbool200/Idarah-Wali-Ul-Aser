@@ -77,7 +77,7 @@ align-items: center;
  .student .middle{
     text-align: center;
     width: 50%;
-    font-size: 1rem;
+    font-size: .9rem;
  }
  .student .left img{
 object-position: center;
