@@ -6,6 +6,10 @@
     --text: #ffffff;
     --glow-color: hsl(132, 69%, 60%) ;
 }
+img{
+    pointer-events: none;
+    touch-action: none;
+}
 .nav-btn{
     display: none;
 }

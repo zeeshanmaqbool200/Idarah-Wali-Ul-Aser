@@ -219,12 +219,6 @@ transition: 1s all;
 }
 .institute .grid-gallery{
 display: grid;
-
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: auto;
-gap: .5rem;
-width: 95%;
-
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: auto;
 gap: .5rem;
@@ -236,6 +230,7 @@ width: 85%;
     height: 100%;
     object-fit: cover;
     position: relative;
+    object-position: center;
     
 }
 
