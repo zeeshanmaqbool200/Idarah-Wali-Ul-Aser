@@ -13,49 +13,6 @@
     --glow-color: hsl(132, 69%, 60%) ;
 }
 
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, black 0%, #222 50%, black 100%);
-    width: 100%;
-    height: 100%;
-    display: table;
-  }
-  .loader {
-    color: white;
-    font-family: Ubuntu Mono, sans-serif;
-    font-weight: bold;
-    animation-duration: 4s;
-    animation-name: spread;
-    animation-iteration-count: infinite;
-    transform: translatez(0,0,0);
-    text-transform: uppercase;
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 1.3em;
-    letter-spacing: 6em;
-    text-indent: -100%;
-  }
-  @keyframes spread {
-    from {
-      letter-spacing: 6em;
-      text-indent: -150%;
-    }
-    5% {
-    }
-    50% {
-      text-indent: 50%;
-      letter-spacing: 0.3em;
-    }
-    95% {
-    }
-    to {
-      letter-spacing: 6em;
-      text-indent: 120%;
-    }
-  }
 
 
 
@@ -364,7 +321,7 @@ text-align: center;
 vertical-align: baseline;
 }
 
-/*Navbar*/
+/* Navbar
 @media only screen and (max-width: 758px){
     .nav-btn{
         display: block;
@@ -390,7 +347,6 @@ vertical-align: baseline;
     justify-content: flex-start;
     gap: 0em;
     padding-top: 40px;
-    background-color: #ffffff0e;
     backdrop-filter: blur(10px);
     height: 1vh;
     width: 100vw;
@@ -409,7 +365,7 @@ vertical-align: baseline;
         color: var(--glow-color);
         text-shadow: 0 0 20px var(--glow-color);
     }
-}
+} */
 
 /* phone */
 @media only screen and (max-width: 600px) {
