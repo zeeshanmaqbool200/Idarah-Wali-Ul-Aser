@@ -1,5 +1,12 @@
-let navBtn = document.getElementById("nav-btn");
-let mobileNav = document.getElementById("nav-right");
+const navBtn = document.getElementById("nav-btn");
+const mobileNav = document.getElementById("nav-right");
+const loader = document.querySelector('.background');
+
+window.addEventListener("load", ()=>{
+    loader.style.display = "none";
+    document.body.style.overflowX = "hidden";
+    document.body.style.overflowY = "auto";
+})
 
 function toggleNav(){
     if(mobileNav.style.left == "0px"){
