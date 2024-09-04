@@ -16,13 +16,31 @@ body{
 .hero{
     text-align: center;
     padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
 }
+.glow {
+    height: 20rem;
+    width: 20rem;
+    background-color: #FF33CA;
+    filter: blur(150px);
+    border-radius: 150px;
+    z-index: 0;
+    position: absolute;
+    opacity:0.90;
+    top: -10px;
+    
+  }
 .hero h1{
     color: gold;
 }
 .wrapper{
 padding: 20px 0;
 }
+
 .wrapper .title{
     font-size: 3rem;
     text-align: center;
@@ -93,7 +111,7 @@ text-align: center;
  .student  .right img{
         width: auto;
         height: 100%;
-        
+        width: 90%;
         object-fit: cover;
         
         border-radius: 10%;
@@ -156,6 +174,20 @@ footer{
 
     /* phone */
 @media only screen and (max-width: 600px) {
+
+    .glow {
+        height: 10rem;
+        width: 10rem;
+        background-color: #FF33CA;
+        filter: blur(150px);
+        border-radius: 150px;
+        z-index: 0;
+        position: absolute;
+        opacity:0.90;
+        top: -10px;
+        
+      }
+
 .student .middle{
     text-align: center;
     width: 50%;

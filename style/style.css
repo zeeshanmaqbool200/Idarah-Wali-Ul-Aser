@@ -68,6 +68,17 @@ justify-content: center;
 align-items: center;
 height: calc(100vh - 90px);
 }
+.hero .glow {
+    height: 20rem;
+    width: 20rem;
+    background-color: #48fc6c;
+    filter: blur(150px);
+    border-radius: 150px;
+    z-index: -1;
+    top: 0;
+    position: absolute;
+    opacity:0.70;
+  }
 .hero h1{
 font-size: var(--font-heading);
 font-weight: 100;
