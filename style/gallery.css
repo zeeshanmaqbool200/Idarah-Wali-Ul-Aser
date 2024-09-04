@@ -12,6 +12,7 @@
     --text: #ffffff;
     --glow-color: hsl(132, 69%, 60%) ;
 }
+
 body{
     font-family: system-ui , "sans-serif";
     background: var(--bg-main);
@@ -19,6 +20,29 @@ body{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+.buttons{
+    padding-top: 10px;
+    }
+    .buttons button{
+    background: transparent;
+    padding: 20px 40px;
+    border-radius: 40px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px var(--text);
+    transition: 500ms all;
+    }
+    .buttons button:hover{
+        box-shadow: 1px 1px 5px var(--text);
+        }
+    .buttons button a{
+        text-decoration: none;
+        color: var(--text);
+        font-size: 1rem;
+        font-weight: 500;
+    }
 
 .hero{
     height: 50vh;
