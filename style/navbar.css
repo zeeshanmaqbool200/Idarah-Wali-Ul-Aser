@@ -107,20 +107,19 @@ header {
         justify-content: space-between;
     }
     .nav-right{
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0em;
+    gap: 5rem;
     padding-top: 40px;
-    backdrop-filter: blur(10px);
-    height: 1vh;
+    backdrop-filter: blur(50px);
+    height: 100vh;
     width: 100vw;
-    left: 800px;
-    top: -500px;
+    left: 400px;
+    top: 0px;
     transition: 1s all;
-    border-radius: 0 0 0 800px;
     overflow: hidden;
     }
     .nav-right a{

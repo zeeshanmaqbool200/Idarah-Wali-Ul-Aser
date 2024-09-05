@@ -11,28 +11,17 @@ window.addEventListener("load", ()=>{
 function toggleNav(){
     if(mobileNav.style.left == "0px"){
         mobileNav.style.left = "800px";
-        mobileNav.style.gap = "0rem";
-        mobileNav.style.height = "1vh";
-        mobileNav.style.borderRadius = "0 0 0 500px";
-        mobileNav.style.display = "0";
-        mobileNav.style.top = "-500px";
-        document.body.style.overflow = "auto";
+        document.body.style.overflowY = "auto";
+        document.body.style.overflowX = "hidden";
         navBtn.innerText = "Menu";
     
     } else{
     mobileNav.style.left = "0px";
-    mobileNav.style.top = "0px";
-    mobileNav.style.gap = "5rem";
-     mobileNav.style.height = "100vh";
-     
     navBtn.style.zIndex = "9999";
      navBtn.innerText = "Close";
-
+     mobileNav.style.display = "flex";
     navBtn.style.zIndex = "111";
-
-    
-
-       mobileNav.style.borderRadius = "0px";
+    mobileNav.style.zIndex = "3";
        document.body.style.overflow = "hidden";
     }
 }
