@@ -22,7 +22,12 @@ body{
 }
 
 .buttons{
+<<<<<<< HEAD
     padding-top: 10px;
+=======
+    padding: 20px;
+    text-align: center;
+>>>>>>> master
     }
     .buttons button{
     background: transparent;
@@ -64,7 +69,11 @@ main{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     width: 100vw;
+<<<<<<< HEAD
     height: 100vh;
+=======
+    
+>>>>>>> master
     gap: 1rem;
     padding: 20px;
 }
@@ -137,3 +146,11 @@ main .image:nth-child(even){
         grid-template-columns: repeat(3, 1fr);
     }
 }
+<<<<<<< HEAD
+=======
+
+footer{
+    padding-top: 50px;
+    text-align: center;
+}
+>>>>>>> master
