@@ -6,8 +6,7 @@ document.body.style.overflow = "hidden";
 
 window.addEventListener("load", ()=>{
     loader.style.display = "none";
-    document.body.style.overflowX = "hidden";
-    document.body.style.overflowY = "auto";
+    document.body.style.overflowY = "scroll";
 })
 
 function toggleNav(){
