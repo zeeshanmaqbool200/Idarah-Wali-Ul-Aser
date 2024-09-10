@@ -7,13 +7,9 @@
     --main-color: #20222c;
     --second-color: #3a51ff;
 }
-<<<<<<< HEAD
-
-=======
 html,body{
     overflow-x: hidden;
 }
->>>>>>> master
 body{
     background-color: var(--main-color);
     color: white;
@@ -25,15 +21,10 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-    justify-content: center ;
-    align-items: center;
-=======
     justify-content: flex-end ;
     align-items: center;
     height: 50vh;
     z-index: -1;
->>>>>>> master
 }
 .glow {
     height: 20rem;
@@ -44,11 +35,7 @@ body{
     z-index: 0;
     position: absolute;
     opacity:0.90;
-<<<<<<< HEAD
-    top: -10px;
-=======
     bottom: 0px;
->>>>>>> master
     
   }
 .hero h1{
@@ -57,8 +44,6 @@ body{
 .wrapper{
 padding: 20px 0;
 }
-<<<<<<< HEAD
-=======
 .video-container {
     position: fixed;
     top: 0;
@@ -89,7 +74,6 @@ padding: 20px 0;
     z-index: 0; /* Places gradient above video but below content */
 }
 
->>>>>>> master
 
 .wrapper .title{
     font-size: 3rem;
@@ -224,8 +208,6 @@ footer{
 
     /* phone */
 @media only screen and (max-width: 600px) {
-<<<<<<< HEAD
-=======
     .video-container {
         position: fixed;
         top: 0;
@@ -235,7 +217,6 @@ footer{
         overflow: hidden;
         z-index: -1; /* Send the video behind the content */
     }
->>>>>>> master
 
     .glow {
         height: 10rem;
@@ -246,11 +227,7 @@ footer{
         z-index: 0;
         position: absolute;
         opacity:0.90;
-<<<<<<< HEAD
-        top: -10px;
-=======
         bottom: 0px;
->>>>>>> master
         
       }
 
