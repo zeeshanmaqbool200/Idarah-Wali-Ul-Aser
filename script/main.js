@@ -3,14 +3,13 @@ const mobileNav = document.getElementById("nav-right");
 const loader = document.querySelector('.background');
 
 document.body.style.overflow = "hidden";
-
+loader.style.zIndex ="999999";
 window.addEventListener("load", ()=>{
     loader.style.display = "none";
     document.body.style.overflowY = "scroll";
-})
+});
 
 function toggleNav(){
-    if(mobileNav.style.left == "0px"){
     if(mobileNav.style.left == "-20px"){
         mobileNav.style.left = "800px";
         document.body.style.overflowY = "auto";
@@ -28,8 +27,8 @@ function toggleNav(){
     navBtn.style.zIndex = "9999";
      navBtn.innerText = "Close";
      mobileNav.style.display = "flex";
-    mobileNav.style.zIndex = "99";
+    mobileNav.style.zIndex = "999";
        document.body.style.overflow = "hidden";
     }
-}
-}
+
+  }
