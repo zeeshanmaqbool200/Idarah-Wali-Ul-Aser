@@ -66,8 +66,6 @@ main{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     width: 100vw;
-    height: 100vh;
-    
     gap: 1rem;
     padding: 20px;
 }
