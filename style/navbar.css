@@ -4,7 +4,7 @@
     --bg-main: #1e1e20;
     --bg-dark: #000000;
     --text: #ffffff;
-    --glow-color: hsl(132, 69%, 60%) ;
+    --glow-color: hsl(0, 69%, 60%) ;
 }
 
 .background {
@@ -63,9 +63,6 @@ header {
     margin: 20px;
     border-radius: 50px;
     backdrop-filter: blur(5px);
-    }
-.nav-btn{
-    display: none;
 }
 
     nav{
@@ -91,55 +88,3 @@ header {
     .nav-left img{
     width: 50px;
     }
-
-    /*Navbar*/
-@media only screen and (max-width: 758px){
-    .nav-btn{
-        display: block;
-        position: relative;
-        z-index: 999999;
-        z-index: 999;
-        cursor: pointer;
-    }
-    header{
-        padding: 10px;
-    }
-    .nav{
-        
-        justify-content: space-between;
-    }
-    .nav-right{
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    padding-top: 40px;
-    backdrop-filter: blur(50px);
-    height: 100vh;
-    width: 100vw;
-    left: 400px;
-    top: 0px;
-    transition: 1s all;
-    overflow: hidden;
-    background: #141414cc;
-    backdrop-filter: blur(5px);
-    height: 100vh;
-    width: 100vw;
-    left: 100vw;
-    top: -20px;
-    transition: 1s all;
-    overflow: hidden;
-    z-index: 99;
-    }
-    .nav-right a{
-        text-decoration: none;
-        color: var(--text);
-        font-size: 2rem;
-    }
-    .nav-right a:in-range{
-        color: var(--glow-color);
-        text-shadow: 0 0 20px var(--glow-color);
-    }
-}

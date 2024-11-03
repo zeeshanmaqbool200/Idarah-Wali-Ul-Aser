@@ -10,7 +10,7 @@
     --bg-main: #1e1e20;
     --bg-dark: #000000;
     --text: #ffffff;
-    --glow-color: hsl(132, 69%, 60%) ;
+    --glow-color: #df5353 ;
 }
 
 
@@ -20,7 +20,6 @@ body{
     font-family: system-ui , "sans-serif";
     background: var(--bg-main);
     color: var(--text);
-    overflow: hidden;
     scroll-behavior: smooth;
 }
 span.glow{
@@ -29,9 +28,7 @@ span.glow{
     background-color: transparent;
 }
 
-.nav-btn{
-    display: none;
-}
+
 
 header{
 box-shadow: 0 0 8px var(--text);
@@ -46,16 +43,16 @@ border-radius: 50px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: -2; /* Send the video behind the content */
+    overflow: hidden;
 }
 .video-container video{
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
 }
