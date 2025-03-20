@@ -8,13 +8,14 @@
   }
   :root{
     --text-primary: #f9bf63;
-    --bg-main: #232328;
-    --bg-primary: #ffffff;
+    --bg-main: #ffffff;
+    --bg-primary: #000000;
     --bg-secondary: #8dff4f;
-    --bg-accent: #FFFFFF;
+    --bg-accent: #ededed;
     --text-accent: #C4C4C4;
   }
   html, body{
+    width: 100vw;
     font-size: 100%;
     scroll-behavior: smooth;
   }
@@ -29,8 +30,8 @@
   .glow {
     height: 30vh;
     width: 40vw;
-    background-color: #FF33CA;
-    filter: blur(150px);
+    background-color: #8f33ff;
+    filter: blur(100px);
     border-radius: 150px;
     z-index: 0;
     z-index: -1;
@@ -40,7 +41,8 @@
   }
 
   .headline{
-    height: 100vh;
+    width: 100vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,103 +73,113 @@
       color: var(--bg-primary);
   }
   
+  .searchDiv{
+    width: 100vw;
+ height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  }
+  .searchDiv #search-text-output{
+    width: 70%;
+    color: rgb(108, 108, 255);
+    text-align: center;
+    padding-top: 10px;
+  }
+  .searchDiv .search-elems{
   
+  }
+  .searchDiv button{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 50px;
+    background-color: var(--bg-accent);
+    border-radius: 100%;
+    color: var(--bg-primary);
+
+  }
+  .searchDiv input{
+    border: none;
+    outline: none;
+    background-color: var(--bg-accent);
+    padding: 20px 10px;
+    width: 40vw;
+    border-radius: 100px;
+    color: var(--bg-primary);
+    transition: .5s all;
+  }
+
+
+  .searchDiv button:hover{
+    border: 2px solid var(--bg-secondary);
+
+  }
+
+.hero{
+  font-size: 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+.hero h2{
+  padding: 20px;
+}
+
   .hero .popular{
     text-align: center;
     
   }
   .popular img{
-    width: 16vw !important;
+    width: 26vw !important;
     border-top-left-radius: 0 ;
   }
   .popular .image{
     display: flex;
-    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     
   }
   .popular .image .text{
-  color: #fff;
   padding: 5px;
   word-wrap: normal;
   
   }
   .popular .image .text h3{
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--text-primary);
   text-align: center;
   }
   .popular .image .text p{
   font-size: 1rem;
   text-align: center;
-  
+  letter-spacing: 3px;
   }
   
-  .searchDiv{
- height: 200px;
-display: flex;
-justify-content: center;
-align-items: center;
-  }
-  .searchDiv #search-text-output{
-    width: 100%;
-    color: var(--bg-primary);
-    text-align: center;
-  }
-  .searchDiv button{
-    border: none;
-    outline: none;
-    border: 2px solid;
-    padding: 20px 40px;
-    background-color: transparent;
-    border-radius: 5px;
-    color: var(--bg-primary);
-    margin-left: 10px;
-  }
-  .searchDiv input{
-    border: none;
-    outline: none;
-    border: 2px solid;
-    padding: 20px 10px;
-    background-color: transparent;
-    border-radius: 5px;
-    color: var(--bg-primary);
-  }
-  .searchDiv input{
-    width: 50vw;
-  }
-  .searchDiv button{
-    background: var(--bg-accent);
-    color: var(--bg-main);
-  }
-  .searchDiv button:hover{
-    border: 2px solid var(--bg-primary);
-    background: transparent;
-    color: var(--bg-primary);
-  }
+
   
+
+
   .heading{
-  color: var(--bg-accent);
+  color: var(--bg-primary);
   padding: 20px 10px;
   margin: 20px 0;
   width: 80%;
   border-radius: 0 10px 10px 0;
   
-  
+  background-color: #d2d2d2;
   }
   
   
   
   .wrapper{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     place-items: center;
-    
 gap: 1rem;
     overflow-x: hidden;
-    padding: 20px;
+    padding: 0px;
   }
 
   .wrapper .image{
@@ -176,30 +188,27 @@ gap: 1rem;
    display: flex;
            justify-content: center;
            flex-direction: column;
-           align-items: center;
-  background: #1c1c21;
-           
-   padding: 10px 20px;
+           align-items: flex-start;
+   padding:5px 10px;
    transition: 1s all ease-in-out;
    border-bottom: 1px solid transparent; 
   }
   .wrapper .image:hover{
-      border-bottom: 1px solid var(--bg-secondary);   
+      border-bottom: 1px solid var(--text-accent);   
     
   }
-  .text{
-    text-align: center;
-  }
+ 
    .book img{
     width: 100%;
        object-fit: cover;
    }
-   
+   .text{
+    padding: 5px 0 10px 0;
+   }
     .text h3{
-    text-align: center;
-    font-size: 1rem;
-    color: var(--text-primary);
-    
+    font-size: 1.2rem;
+    color: var(--bg-primary);
+  font-family: sans-serif;
   }
   .text p{
     font-size: .6rem;
@@ -243,18 +252,20 @@ gap: 1rem;
   
   .container {
       position: fixed;
-      top: 10px;
+      top: 0px;
       right: 0;
       bottom: 0;
       left: 0;
       margin: auto;
-      display: none;
-      width: 80vw;
-      height: 80vh;
-      background-color: var(--bg-primary);
+      /* display: none; */
+      width: 100vw;
+      height: 100vh;
+      transform: scale(0);
+      background-color: #ffffff72;
+      backdrop-filter: blur(50px);
       border-radius: 10px;
       padding: 20px;
-  
+  transition: .4s all;
   }
   .back-button{
     padding: 15px;
@@ -433,22 +444,19 @@ gap: 1rem;
 
 
          .searchDiv button{
-            padding: 10px 20px;
-            margin-left: 6px;
+          
+            margin-left: 2px;
+      
           }
           .searchDiv input{
-           
-            padding: 10px;
+            
+            padding: 20px;
            
           }
           .searchDiv input{
             width: 50vw;
           }
-          .searchDiv p{
-            position: absolute;
-            left: 0;
-            bottom: 0;
-          }
+  
          
          
 
