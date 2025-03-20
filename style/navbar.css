@@ -78,8 +78,12 @@ nav {
     transition: 1s all;
     height: 34vh;
   }
+  .nav-right:focus-within {
+    transition: 1s all;
+    height: 34vh;
+  }
   .nav-right {
-    line-height: 3rem;
+    line-height: 2rem;
     flex-direction: column;
    overflow: hidden;
 position: absolute;
@@ -93,7 +97,7 @@ gap: 0;
   }
 
   .nav-right a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .nav-left img {
