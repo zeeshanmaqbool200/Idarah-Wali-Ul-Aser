@@ -136,7 +136,7 @@ span.glow {
     background: #ff5f5f75;
     position: absolute;
     top: 0px;
-    left: -70px;
+    left: -80px;
     z-index: -1;
     transition: 1s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border-radius: 10%;
