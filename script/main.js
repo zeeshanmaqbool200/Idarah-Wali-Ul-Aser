@@ -8,7 +8,7 @@ for (let i = 1; i <= gallery; i++) {
 
 
 
-    
+
 
 
 }
@@ -18,24 +18,18 @@ const insideImg = document.querySelectorAll(".image img");
 
 for (const pics of insideImg) {
 
-    
-    function downloadImage(e){
+
+    function downloadImage(e) {
         let targetImage = e.parentElement.querySelector('img').src;
-    
-        
         let link = document.createElement('a');
-        link.href = insideImg.scr;
-        link.download = JSON.stringify(targetImage);
-        console.log(JSON.stringify(targetImage));
-        console.log(targetImage);
-        
-     link.click();
-       
+        link.href = targetImage;
+        link.download = targetImage.trim();
+        link.click();
     }
 }
-   
-       
-     
-        
-        
-    
+
+
+
+
+
+
