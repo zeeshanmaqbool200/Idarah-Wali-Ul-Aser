@@ -1,31 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
-:root{
+
+:root {
     --font-heading: 8vw;
-    --font-subhead: 3vw; 
+    --font-subhead: 3vw;
     --bg-main: #d2d2d2;
     --bg-dark: #ffffff;
     --text: #000000;
-    --glow-color: hsl(132, 69%, 60%) ;
+    --glow-color: hsl(132, 69%, 60%);
 }
 
-body{
-    font-family: system-ui , "sans-serif";
+body {
+    font-family: system-ui, "sans-serif";
     color: var(--text);
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
-.buttons{
+.buttons {
     padding-top: 10px;
     padding: 20px;
     text-align: center;
-    }
-    .buttons button{
+}
+
+.buttons button {
     background: transparent;
     padding: 20px 40px;
     border-radius: 40px;
@@ -34,18 +36,20 @@ body{
     outline: none;
     box-shadow: 0 0 10px var(--text);
     transition: 500ms all;
-    }
-    .buttons button:hover{
-        box-shadow: 1px 1px 5px var(--text);
-        }
-    .buttons button a{
-        text-decoration: none;
-        color: var(--text);
-        font-size: 1rem;
-        font-weight: 500;
-    }
+}
 
-.hero{
+.buttons button:hover {
+    box-shadow: 1px 1px 5px var(--text);
+}
+
+.buttons button a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero {
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -53,21 +57,24 @@ body{
     background: url('/images/maktab/syed mustafa bg.jpg');
     background-position: center;
     background-size: cover;
-    
+
     margin: 0 60px;
     border-radius: 10px;
 }
-.hero h1{
+
+.hero h1 {
     font-size: 3rem;
     text-shadow: 0 0 50px var(--glow-color);
     color: white;
     background-color: #000000;
-    padding:5px;
+    padding: 5px;
 }
-h2{
+
+h2 {
     padding: 20px;
 }
-main{
+
+main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -78,34 +85,58 @@ main{
 
 
 
-main .image{
+main .image {
     width: 100%;
-   position: relative; 
+    position: relative;
     transition: .5s all;
 }
-main .image button{
-    padding: 10px;
+
+main .image button {
+    padding: 10px 15px;
     position: absolute;
     bottom: 10px;
     right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: 1s all;
+    background-color: rgba(255, 245, 238, 0.253);
+    backdrop-filter: blur(20px);
 }
 
- .image img{
-width: 100%;
-height: 100%;
+.image button:hover {
+    backdrop-filter: blur(2px);
+}
+
+.image button:active {
+    color: green;
+}
+
+.image:hover button {
+    opacity: 1;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
-.image:hover{
-    transform: scale(1.2);
-    z-index: 9999;
+
+.image:hover {
+    transform: scale(1.1);
+    z-index: 99;
 }
 
-main .image:nth-child(odd){
+main .image:nth-child(odd) {
     grid-column: span 1;
     grid-row: span 1;
 }
-main .image:nth-child(even){
+
+main .image:nth-child(even) {
     grid-column: span 1;
     grid-row: span 2;
 }
@@ -115,12 +146,14 @@ main .image:nth-child(even){
 
 /* phone */
 @media only screen and (max-width: 600px) {
-    .hero{
+    .hero {
         height: 40vh;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 1rem;
     }
+
     main {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -129,34 +162,41 @@ main .image:nth-child(even){
 
 /*large phones*/
 
-@media only screen and (min-width: 601px) and (max-width: 758px){
-    .hero{
+@media only screen and (min-width: 601px) and (max-width: 758px) {
+    .hero {
         height: 40vh;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 2rem;
     }
+
     main {
         grid-template-columns: repeat(2, 1fr);
     }
 
 
 }
+
 /* tablet */
-@media only screen and (min-width: 769px) and (max-width: 1024px){
-    .hero{
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero {
         height: 50vh;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 2rem;
     }
+
     main {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-footer{
+
+footer {
     text-align: center;
 }
+
 .foot-mid {
     padding: 20px;
     display: flex;
@@ -188,5 +228,3 @@ footer{
     list-style: none;
 
 }
-
-
