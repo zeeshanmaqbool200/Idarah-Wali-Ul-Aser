@@ -111,64 +111,8 @@ span.glow {
 
 }
 
-.buttons {
-    padding-top: 10px;
-}
-
-.buttons button {
-    background: #ffffff57;
-    backdrop-filter: blur(20px);
-    height: 60px;
-    border-radius: 40px;
-    margin: 10px;
-    border: none;
-    outline: none;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.128);
-
-}
-
-.buttons button::before {
-    content: "";
-    width: 40%;
-    height: 100%;
-    background: #ff5f5f75;
-    position: absolute;
-    top: 0px;
-    left: -80px;
-    z-index: -1;
-    transition: 1s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border-radius: 10%;
 
 
-}
-
-.buttons button:hover {
-    /* box-shadow:1px 1px 3px var(--text); */
-}
-
-.buttons button:nth-child(0)~button::before,
-.buttons button:hover::before {
-    top: 0;
-    rotate: 0deg;
-    left: 0px;
-    mix-blend-mode: multiply;
-    width: 100%;
-    border-radius: 40px;
-    background-color: #b9a1ff;
-}
-
-.buttons button a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 2vw;
-    font-weight: 500;
-    height: 40px;
-    padding: 40px;
-
-
-}
 
 main {
     min-height: 100vh;

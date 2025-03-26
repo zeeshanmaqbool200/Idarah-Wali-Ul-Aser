@@ -36,7 +36,7 @@
                     <span class="ml-3 text-xl font-bold">ہزار کتاب </span>
                 </div>
                 <div class="hidden md:flex items-center space-x-4">
-                    <a href="/index.html" class="text-gray-600 hover:text-indigo-600 px-2 py-1">Home</a>
+                    <a href="../index.html" class="text-gray-600 hover:text-indigo-600 px-2 py-1">Home</a>
                     <a href="#" class="text-gray-600 hover:text-indigo-600 px-2 py-1">About</a>
                     <a href="/public/library.html" class="text-gray-600 hover:text-indigo-600 px-2 py-1">Library</a>
                     <a href="/public/gallery.html" class="text-gray-600 hover:text-indigo-600 px-2 py-1">Gallery</a>
@@ -188,16 +188,16 @@
                         <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-2">Organisation</h3>
                         <div class="flex flex-col space-y-1">
                             <a href="#" class="text-sm hover:text-white">About</a>
-                            <a href="#" class="text-sm hover:text-white">Volunteer</a>
-                            <a href="#" class="text-sm hover:text-white">Contact</a>
+                            <a href="/public/contact.html" class="text-sm hover:text-white">Volunteer</a>
+                            <a href="/public/contact.html" class="text-sm hover:text-white">Contact</a>
                         </div>
                     </div>
                     <div>
                         <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-2">Resources</h3>
                         <div class="flex flex-col space-y-1">
-                            <a href="#" class="text-sm hover:text-white">Gallery</a>
-                            <a href="#" class="text-sm hover:text-white">Library</a>
-                            <a href="#" class="text-sm hover:text-white">Institute</a>
+                            <a href="/public/gallery.html" class="text-sm hover:text-white">Gallery</a>
+                            <a href="/public/gallery.html" class="text-sm hover:text-white">Library</a>
+                            <a href="/public/institute.html" class="text-sm hover:text-white">Institute</a>
                         </div>
                     </div>
                     <div>
@@ -205,7 +205,7 @@
                         <div class="flex flex-col space-y-1">
                             <a href="#" class="text-sm hover:text-white">Privacy</a>
                             <a href="#" class="text-sm hover:text-white">Terms</a>
-                            <a href="#" class="text-sm hover:text-white">Socials</a>
+                            <a href="https://linktr.ee/idarahwaliulaser" class="text-sm hover:text-white">Socials</a>
                         </div>
                     </div>
                 </div>
@@ -216,57 +216,6 @@
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <input type="file" id="upload" accept="application/pdf">
-    <canvas id="pdf-canvas"></canvas> -->
-    <script type="module" src="/script/pdf.main.mjs"></script>
-    <script>
-        document.getElementById('upload').addEventListener('change', function (event) {
-            const file = event.target.files[0];
-            if (file) {
-                const fileReader = new FileReader();
-                fileReader.onload = function () {
-                    const typedArray = new Uint8Array(this.result);
-                    pdfjsLib.getDocument(typedArray).promise.then(pdf => {
-                        pdf.getPage(1).then(page => {
-                            const canvas = document.getElementById('pdf-canvas');
-                            const ctx = canvas.getContext('2d');
-                            const viewport = page.getViewport({ scale: 1.5 });
-
-                            canvas.width = viewport.width;
-                            canvas.height = viewport.height;
-
-                            const renderContext = {
-                                canvasContext: ctx,
-                                viewport: viewport
-                            };
-                            page.render(renderContext);
-                        });
-                    });
-                };
-                fileReader.readAsArrayBuffer(file);
-            }
-        });
-    </script>
 </body>
 
 </html>
