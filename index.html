@@ -46,6 +46,33 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:700' rel='stylesheet' type='text/css'>
     <!-- <script src="/script/tailwind.js"></script> -->
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js'></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function() {
+        window.AgentInitializer.init({
+          agentRenderURL: "https://agent.jotform.com/0195d0c6ac1b73ceb17b35fa3d43b70f1d15",
+          rootId: "JotformAgent-0195d0c6ac1b73ceb17b35fa3d43b70f1d15",
+          formID: "0195d0c6ac1b73ceb17b35fa3d43b70f1d15",
+          queryParams: ["skipWelcome=1", "maximizable=1"],
+          domain: "https://www.jotform.com",
+          isDraggable: false,
+          background: "linear-gradient(180deg, #141415 0%, #667193 100%)",
+          buttonBackgroundColor: "#0066C3",
+          buttonIconColor: "#FFFFFF",
+          variant: false,
+          customizations: {
+            "greeting": "Yes",
+            "greetingMessage": "Asslamualikum How can I assist You?",
+            "openByDefault": "No",
+            "pulse": "Yes",
+            "position": "left",
+            "autoOpenChatIn": "0"
+          },
+          isVoice: undefined
+        });
+      });
+    </script>
+
     <title>Idarah Wali Ul Aser</title>
 </head>
 
